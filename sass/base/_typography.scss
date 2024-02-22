@@ -1,0 +1,177 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  //padding: 3rem;
+  box-sizing: border-box;
+}
+
+.heading-primary {
+  color: $color-white;
+  backface-visibility: hidden;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+  margin-left: 5rem;
+
+  @include respond(tab-land) {
+    margin-left: 15rem;
+  }
+
+  @include respond(tab-port) {
+    margin-left: 15rem;
+  }
+
+  @include respond(big-phone) {
+    margin-left: 55rem;
+  }
+
+  @include respond(phone) {
+    width: 55rem;
+    margin-left: -5rem;
+  }
+
+  &--main {
+    display: block;
+    color: $color-green;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    margin-bottom: 10px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      font-size: 2.6rem;
+    }
+
+    /*
+      animation-delay: 3s;
+      animation-iteration-count: 3;
+     */
+  }
+
+  &--sub {
+    display: block;
+    color: $color-pink;
+    font-size: 6.2rem;
+    letter-spacing: 0.75px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.2;
+
+    animation: moveInRight 1s ease-out;
+  }
+
+  &--text {
+    display: block;
+    font-size: 4.8rem;
+    color: $color-grey-dark;
+    letter-spacing: 0.75px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    animation: moveInRight 1s ease-out;
+  }
+
+  &--text-p {
+    display: block;
+    color: $color-grey-dark;
+    width: 70%;
+    margin-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0.75px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.2;
+    animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      font-size: 2.6rem;
+      width: 72rem;
+    }
+
+    @include respond(smaller-phone) {
+      width: 58rem;
+    }
+
+    @include respond(small-phone) {
+      font-size: 2.6rem;
+      width: 60rem;
+    }
+
+    @include respond(smallest-phone) {
+      width: 57rem;
+    }
+
+    @include respond(thesmallest-phone) {
+      width: 55rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+
+.content {
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.color-tertiary {
+  color: $color-green;
+}
+
+.heading-tertiary {
+  color: $color-primary;
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include respond(big-phone) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(small-phone) {
+    font-size: 2rem;
+  }
+}
+
+.paragraph,
+.paragraph2,
+.paragraph3 {
+  color: $color-grey-dark-3;
+  font-size: $default-font-size;
+  padding: 0 1rem 0 1rem;
+
+  @include respond(big-phone) {
+    max-width: 100%;
+    font-size: 2.2rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
