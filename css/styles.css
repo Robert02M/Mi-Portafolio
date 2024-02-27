@@ -1285,7 +1285,7 @@ body {
     transform: rotate(90deg);
     height: 76rem; }
   .header__logo {
-    margin: 4rem 2rem ;
+    margin: 9rem 5rem ;
     max-width: 15rem;
     height: auto;
     
@@ -1294,7 +1294,7 @@ body {
     @media (max-width: 44.5em) {
       .header__logo {
         max-width: 30%;
-        margin: 19rem 1rem 1rem } }
+        margin: 35rem 0.5rem 1rem } }
   .header__text-box {
     position: absolute;
     top: 40%;
