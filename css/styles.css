@@ -1293,7 +1293,8 @@ body {
    }
     @media (max-width: 44.5em) {
       .header__logo {
-        max-width: 30%; } }
+        max-width: 30%;
+        margin: 19rem 1rem 1rem } }
   .header__text-box {
     position: absolute;
     top: 40%;
