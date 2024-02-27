@@ -13,7 +13,7 @@ const checkbox = document.querySelector(".navigation__checkbox");
 // paragraph
 const paragraph = document.querySelector(".paragraph");
 const paragraph2 = document.querySelector(".paragraph2");
-const paragraph3 = document.querySelector(".paragraph3");
+
 
 // Dark mode
 const $themeBtn = document.querySelector("#dark-mode");
