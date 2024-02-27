@@ -1285,15 +1285,15 @@ body {
     transform: rotate(90deg);
     height: 76rem; }
   .header__logo {
-    max-width: 55%;
+    margin: 4rem 2rem ;
+    max-width: 15rem;
     height: auto;
-    padding-left:70px;
-    padding-top: 100px;
+    
     
    }
     @media (max-width: 44.5em) {
       .header__logo {
-        max-width: 25%; } }
+        max-width: 30%; } }
   .header__text-box {
     position: absolute;
     top: 40%;
