@@ -82,7 +82,6 @@ const lightMode = () => {
   $themeBtn.textContent = dark;
   paragraph.style.color = darkBlue;
   paragraph2.style.color = darkBlue;
-  paragraph3.style.color = darkBlue;
   localStorage.setItem("theme", "light");
 };
 
@@ -91,7 +90,6 @@ const darkMode = () => {
   $themeBtn.textContent = light;
   paragraph.style.color = pink;
   paragraph2.style.color = pink;
-  paragraph3.style.color = pink;
   localStorage.setItem("theme", "dark");
 };
 
