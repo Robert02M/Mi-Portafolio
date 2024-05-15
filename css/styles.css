@@ -89,7 +89,8 @@ body {
      */ }
     @media (max-width: 39.5em) {
       .heading-primary--main {
-        font-size: 2.6rem; } }
+        font-size: 2.6rem;
+        margin-top: 50px; } }
   .heading-primary--sub {
     display: block;
     color: #faf4ee;
@@ -99,6 +100,15 @@ body {
     font-weight: 700;
     line-height: 1.2;
     animation: moveInRight 1s ease-out; }
+
+    @media (max-width: 39.5em){
+      .heading-primary--sub {
+        font-size: 5rem;
+
+      }
+      
+
+    }
   .heading-primary--text {
     display: block;
     font-size: 4.8rem;
@@ -1294,7 +1304,8 @@ body {
     @media (max-width: 44.5em) {
       .header__logo {
         max-width: 20%;
-        margin: 35rem 0.5rem 1rem } }
+       margin-left: 5rem;
+       padding-top: 10px; } }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -1343,6 +1354,13 @@ body {
     height: auto;
     border-radius: 50%;
     border: 4px solid #f6fa18;
+  }
+  @media (max-width: 700px) {
+    .header__me-img{
+    width: 80%;
+    margin-left: 10rem;
+    }
+
   }
   .header__contact--list {
     display: flex;
